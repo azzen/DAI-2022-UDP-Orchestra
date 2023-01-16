@@ -139,20 +139,20 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 
 ## Task 3: package the "musician" app in a Docker image
 
-| #        | Topic                                                                               |
-| -------- | ----------------------------------------------------------------------------------- |
-| Question | How do we **define and build our own Docker image**?                                |
-|          | _Enter your response here..._                                                       |
-| Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?                        |
-|          | _Enter your response here..._                                                       |
-| Question | After building our Docker image, how do we use it to **run containers**?            |
-|          | _Enter your response here..._                                                       |
-| Question | How do we get the list of all **running containers**?                               |
-|          | _Enter your response here..._                                                       |
-| Question | How do we **stop** and **kill** one running container?                              |
-|          | _Enter your response here..._                                                       |
-| Question | How can we check that our running containers are effectively sending UDP datagrams? |
-|          | _Enter your response here..._                                                       |
+| #        | Topic                                                                                                                                                                                                                                                                   |
+| -------- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Question | How do we **define and build our own Docker image**?                                                                                                                                                                                                                    |
+|          | On utilise des Dockerfile pour définir notre propre image. Ensuite, on peut utiliser la commande `docker build` pour construire une image avec son tag, il fuat exécuter la commande dans le dossier contenant le Dockerfile. Ex : `docker build --tag dai/musician .`. |
+| Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?                                                                                                                                                                                                            |
+|          | `ENTRYPOINT` est utilisé pour passer des paramètres aux containers lors de son exécution (`docker run`).                                                                                                                                                                |
+| Question | After building our Docker image, how do we use it to **run containers**?                                                                                                                                                                                                |
+|          | On utilise la commande `docker run` avec le tag défini précédemment. Ex : `docker run dai/musician <instrument>`.                                                                                                                                                       |
+| Question | How do we get the list of all **running containers**?                                                                                                                                                                                                                   |
+|          | `docker ps`                                                                                                                                                                                                                                                             |
+| Question | How do we **stop** and **kill** one running container?                                                                                                                                                                                                                  |
+|          | `docker stop <nom-container>` et `docker kill <nom-container>`                                                                                                                                                                                                          |
+| Question | How can we check that our running containers are effectively sending UDP datagrams?                                                                                                                                                                                     |
+|          | On peut utiliser netcat avec le paramètre `-u` pour UDP. On simule le serveur sur le même port.                                                                                                                                                                         |
 
 ## Task 4: implement an "auditor" Node.js application
 
