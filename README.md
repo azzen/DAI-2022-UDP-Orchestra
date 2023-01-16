@@ -103,18 +103,18 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 
 ## Task 1: design the application architecture and protocols
 
-| #        | Topic                                                                                                                                                                   |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| #        | Topic                                                                                                                                                           |
+| -------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Question | How can we represent the system in an **architecture diagram**, which gives information both about the Docker containers, the communication protocols and the commands? |
-|          | _Insert your diagram here..._                                                                                                                                           |
-| Question | Who is going to **send UDP datagrams** and **when**?                                                                                                                    |
-|          | _Enter your response here..._                                                                                                                                           |
-| Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received?                                                                        |
-|          | _Enter your response here..._                                                                                                                                           |
-| Question | What **payload** should we put in the UDP datagrams?                                                                                                                    |
-|          | _Enter your response here..._                                                                                                                                           |
-| Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures?                |
-|          | _Enter your response here..._                                                                                                                                           |
+|          | ![arch-diagram](images/arch-diagram.svg)                                                                                                                        |
+| Question | Who is going to **send UDP datagrams** and **when**?                                                                                                            |
+|          | Les musiciens aux auditeurs toutes les secondes.                                                                                                                |
+| Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received?                                                                |
+|          | Les auditeurs écoutent                                                                                                                                          |
+| Question | What **payload** should we put in the UDP datagrams?                                                                                                            |
+|          | _Enter your response here..._                                                                                                                                   |
+| Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures?        |
+|          | _Enter your response here..._                                                                                                                                   |
 
 ## Task 2: implement a "musician" Node.js application
 
