@@ -1,5 +1,5 @@
- FROM node:19
-
- COPY src /opt/app/
-
- ENTRYPOINT ["node", "/opt/app/app.js"]
+FROM node:19
+WORKDIR /opt/app
+COPY src ./
+RUN npm install
+ENTRYPOINT ["node", "app.js"]
